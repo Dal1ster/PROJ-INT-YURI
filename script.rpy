@@ -462,16 +462,16 @@ label gameover2:
 label start:
     $ quick_menu = False
 
-    t "The following experience features mature content.{w=.5} For full content warning,{w=.25} please read the included text file."
+    t "The following experience features Yuri."
     
     menu:
-        t "Do you consent to exposure to potentially disturbing content?"
+        t "Do you consent to Yuri?"
 
         "Yes": 
             t "Please enjoy the experience."
     
         "No":
-            t "It's okay,{w=.25} I understand."
+            t "Fuck u. >:("
             $ renpy.quit() 
     
 label beginning:    
@@ -498,53 +498,29 @@ label beginning:
     
     December {fast}{nw}
     
-    December{fast}{nw}
+    December{fast}
     
-    Decembe{fast}{nw}
+    December {fast}{nw}
     
-    Decemb{fast}{nw}
+    December 2{fast}{nw}
     
-    Decem{fast}{nw}
+    December 28{fast}{nw}
     
-    Dece{fast}{nw}
-    
-    Dec{fast}{nw}
-    
-    De{fast}{nw}
-    
-    D{fast}{nw}
-    
-    O{fast}{nw}
-    
-    Oc{fast}{nw}
+    December 28t{fast}{nw}
 
-    Oct{fast}{nw}
-    
-    Octo{fast}{nw}
-    
-    Octob{fast}{nw}
-    
-    Octobe{fast}{nw}
-    
-    October{fast}{nw}
-    
-    October {fast}{nw}
-    
-    October 3{fast}{nw}
+    December 28th{fast}{nw}
 
-    October 31{fast}{nw}
-    
-    October 31,{fast}{nw}
-    
-    October 31, {fast}{nw}
+    December 28th,{fast}{nw}
 
-    October 31, 2{fast}{nw}
-    
-    October 31, 20{fast}{nw}
-    
-    October 31, 202{fast}{nw}
+    December 28th, {fast}{nw}
 
-    October 31st, 2024{fast}
+    December 28th, 2{fast}{nw}
+
+    December 28th, 20{fast}{nw}
+    
+    December 28th, 202{fast}{nw}
+
+    December 28th, 2024{fast}
     """
 
     """
