@@ -468,7 +468,7 @@ label start:
         t "Do you consent to Yuri?"
 
         "Yes": 
-            t "Please enjoy the experience."
+            t "Please enjoy the Yuri."
     
         "No":
             t "Fuck u. >:("
