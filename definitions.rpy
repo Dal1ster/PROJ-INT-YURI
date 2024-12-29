@@ -423,7 +423,7 @@ image landonuts worried = "andonuts/andonuts_worried_left.png" # idk if we can f
 image landonuts happy = "andonuts/andonuts_happy_left.png" # idk if we can flip images through code, so i did it through separate flipped images
 
 # MUSIC
-define audio.snowblind = "<loop 8.777>audio/bgm/snowblind.ogg"
+define audio.snowblind = "<loop 8.726>audio/bgm/snowblind.ogg"
 
 # SOUND EFFECTS
 
