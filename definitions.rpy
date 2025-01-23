@@ -76,11 +76,6 @@ define flash = Fade(.1, 0.0, .25, color="#fff")
 transform two_size:
     zoom 2
 
-image joke_explainer = "joke_explainer.png"
-image joke_explainer happy = "je_happy_talk.png"
-image joke_explainer confused = "je_confused.png"
-image joke_explainer question = "je_confused_dontsweatit.png"
-
 image varik = "varik.png"
 image varik sword = "varik_sword.png"
 image mr_dee = "mr_dee.png"
@@ -406,6 +401,8 @@ transform cccfuckoffleft:
 transform battle:
     xalign .5
     yalign .05
+transform flip: # Used for flipping. Taken from: https://www.reddit.com/r/RenPy/comments/je2pzw/comment/g9fk1n3/
+    xzoom -1.0
     
     
 ################################################################
@@ -418,9 +415,11 @@ image voice_tower_explode = "images/bg/voice_tower_explode.png"
 image andonuts = "andonuts/andonuts.png" # changed from CogDis to be in an Andonuts folder, for convenience's sake
 image andonuts worried = "andonuts/andonuts_worried.png" # changed from CogDis to be in an Andonuts folder, for convenience's sake
 image andonuts happy = "andonuts/andonuts_happy.png" # changed from CogDis to be in an Andonuts folder, for convenience's sake
-image landonuts = "andonuts/andonuts_left.png" # idk if we can flip images through code, so i did it through separate flipped images
-image landonuts worried = "andonuts/andonuts_worried_left.png" # idk if we can flip images through code, so i did it through separate flipped images
-image landonuts happy = "andonuts/andonuts_happy_left.png" # idk if we can flip images through code, so i did it through separate flipped images
+
+image joke_explainer = "jkex7000/joke_explainer.png" # changed from CogDis to be in an Andonuts folder, for convenience's sake
+image joke_explainer happy = "jkex7000/je_happy_talk.png" # changed from CogDis to be in an Andonuts folder, for convenience's sake
+image joke_explainer confused = "jkex7000/je_confused.png" # changed from CogDis to be in an Andonuts folder, for convenience's sake
+image joke_explainer question = "jkex7000/je_confused_dontsweatit.png" # changed from CogDis to be in an Andonuts folder, for convenience's sake
 
 # MUSIC
 define audio.snowblind = "<loop 8.726>audio/bgm/snowblind.ogg"
