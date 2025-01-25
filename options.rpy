@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "0.0"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -37,7 +37,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "CognitiveDissonance"
+define build.name = "PROJINTYURI"
 
 
 ## Sounds and music ############################################################
