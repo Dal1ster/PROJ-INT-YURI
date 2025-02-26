@@ -65,28 +65,32 @@ label beginning:
     December 22nd, 2024{fast}
     """
 
-    "On the outskirts of Grandiose City…"
-    "two robots were huddled together, trying to survive the harsh cold."
-    "That is until…"
+    """
+    On the outskirts of Grandiose City... \n
+	
+    two robots were huddled together, trying to survive the harsh cold. \n
+	
+    That is until...
+	"""
 
     cen """
-    December 25th, 2016
+    December 22nd, 2024
     
-    December 25th, 201{fast}{nw}
+    December 22nd, 202{fast}{nw}
     
-    December 25th, 20{fast}{nw}
+    December 22nd, 20{fast}{nw}
     
-    December 25th, 2{fast}{nw}
+    December 22nd, 2{fast}{nw}
     
-    December 25th, {fast}{nw}
+    December 22nd, {fast}{nw}
     
-    December 25th,{fast}{nw}
+    December 22nd,{fast}{nw}
     
-    December 25th{fast}{nw}
+    December 22nd{fast}{nw}
     
-    December 25t{fast}{nw}
+    December 22n{fast}{nw}
     
-    December 25{fast}{nw}
+    December 22{fast}{nw}
     
     December 2{fast}{nw}
     
