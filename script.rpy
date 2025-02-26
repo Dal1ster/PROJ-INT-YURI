@@ -46,6 +46,50 @@ label beginning:
     
     December 2{fast}{nw}
     
+    December 22{fast}{nw}
+    
+    December 22n{fast}{nw}
+        
+    December 22nd{fast}{nw}
+        
+    December 22nd,{fast}{nw}
+    
+    December 22nd, {fast}{nw}
+
+    December 22nd, 2{fast}{nw}
+    
+    December 22nd, 20{fast}{nw}
+    
+    December 22nd, 202{fast}{nw}
+
+    December 22nd, 2024{fast}
+    """
+
+    "On the outskirts of Grandiose City…"
+    "two robots were huddled together, trying to survive the harsh cold."
+    "That is until…"
+
+    cen """
+    December 25th, 2016
+    
+    December 25th, 201{fast}{nw}
+    
+    December 25th, 20{fast}{nw}
+    
+    December 25th, 2{fast}{nw}
+    
+    December 25th, {fast}{nw}
+    
+    December 25th,{fast}{nw}
+    
+    December 25th{fast}{nw}
+    
+    December 25t{fast}{nw}
+    
+    December 25{fast}{nw}
+    
+    December 2{fast}{nw}
+    
     December 28{fast}{nw}
     
     December 28t{fast}{nw}
@@ -64,14 +108,6 @@ label beginning:
 
     December 28th, 2024{fast}
     """
-
-    scene voice_tower_explode at truecenter with Dissolve(1.0)
-    "In the Voice's tower..."
-    
-    "Something was happening at the top floor."
-    extend "\nBut that's a story for another time."
-    
-    show black at truecenter with dissolve_2sec_wtext
     
     "Meanwhile, lower in the tower, in Dr. Andonuts' lab..."
 
@@ -79,8 +115,8 @@ label beginning:
     
     play music snowblind
     
-    t "CYP-XPL-001 - POWER RESERVES: 100\% - CONDITION: STABLE"
-    extend "\n919-XPL-001 - POWER RESERVES: 100\% - CONDITION: STABLE"
+    t "andonuts@HWCdesk4012:/$ exutils get stat CYP-XPL-001\nPOWER RESERVES: 100\%\nCONDITION: STABLE"
+    t "andonuts@HWCdesk4012:/$ exutils get stat n919-XPL-001\nPOWER RESERVES: 100\%\nCONDITION: STABLE"
     
     show andonuts worried at flip, cccleft with dissolve
     "The doctor read over the pair's logs closely.\nThey had clearly been worn out from their time away from the laboratory, but at least they were fine now -{w=.5} and safely resting."

@@ -148,7 +148,6 @@ image battle_trans:
     pause .03
     "transition/CDTransition_000039.png" 
 
-image dead_je = WaveImage("doomfes_je.png",amp=40, freq=50, speed=50, strip_height=10,)
 init python:
     renpy.music.register_channel("sound_2", "sfx", loop=False)
     renpy.music.register_channel("music_c", "music", loop=True)
