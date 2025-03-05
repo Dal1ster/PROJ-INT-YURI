@@ -223,7 +223,7 @@ transform flip: # Used for flipping. Taken from: https://www.reddit.com/r/RenPy/
 ################################################################
 
 # IMAGES
-image voice_tower_explode = "images/bg/voice_tower_explode.png"
+image ccclab = "images/bg/CCCLab.png"
 
 image andonuts = "andonuts/andonuts.png" # changed from CogDis to be in an Andonuts folder, for convenience's sake
 image andonuts worried = "andonuts/andonuts_worried.png" # changed from CogDis to be in an Andonuts folder, for convenience's sake
