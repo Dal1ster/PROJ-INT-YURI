@@ -58,152 +58,16 @@ init:
 
 #
 
-
-
-define intflag = 0
-define donutflag = False
-define je = Character("JK-EX-7000", window_background="gui/textbox-cl.png")
-define a = Character("Dr. Andonuts", window_background="gui/textbox-cr.png", who_xalign=1.0, who_xpos=1720)
-define q = Character("???", window_background="gui/textbox-cl.png")
-define d = Character("Mr. Dee", window_background="gui/textbox-cl.png", what_style="boing", what_size=49)
-define v = Character("Varik", window_background="gui/textbox-cl.png")
-define t = Character(None, what_color='#15D114') 
-define g1 = Character("Andonuts (?)", window_background="gui/textbox-cr.png", who_xalign=1.0, who_xpos=1720)
-define g2 = Character("Andonuts (??)", window_background="gui/textbox-cr.png", who_xalign=1.0, who_xpos=1720)
-define g3 = Character("Andonuts (???)", window_background="gui/textbox-cr.png", what_font="Perfect DOS VGA 437 Win.ttf", what_size=46, who_xalign=1.0, who_xpos=1720)
+define cl = "gui/textbox-cl.png"
+define cr = "gui/textbox-cr.png"
+define je = Character("JK-EX-7000")
+define a = Character("Dr. Andonuts")
+define q = Character("???")
+define t = Character(None, what_color='#15D114')
 define cen = Character(None, what_xalign=0.5, what_text_align=0.5)
 define flash = Fade(.1, 0.0, .25, color="#fff")
 transform two_size:
     zoom 2
-
-image joke_explainer = "joke_explainer.png"
-image joke_explainer happy = "je_happy_talk.png"
-image joke_explainer confused = "je_confused.png"
-image joke_explainer question = "je_confused_dontsweatit.png"
-
-image varik = "varik.png"
-image varik sword = "varik_sword.png"
-image mr_dee = "mr_dee.png"
-image mr_dee pointing = "mr_dee_pointing.png"
-image guilt1 = "guilt1_neutral.png"
-image guilt1 battle = "guilt1_battle.png"
-image guilt2 = "guilt2_neutral.png"
-image guilt2 battle = "guilt2_battle.png"
-image guilt2_pat:
-    "guilt2_hug_pat1"
-    pause .5
-    "guilt2_hug_pat2"
-    pause .5
-    repeat
-image voice_bg = Movie(play="images/Thunder_background.webm")
-image terrifying = Movie(play="images/Terrifiing.webm")
-image voice_battle = Movie(play="images/voicedonuts bg.webm")
-image guilt3 = "guilt3_neutral.png"
-image guilt3 battle = "vandonuts/guilt3_battle_0000.png"
-image guilt3 battle ani1:
-    "vandonuts/guilt3_battle_0000.png"
-    pause .075
-    "vandonuts/guilt3_battle_0001.png"
-    pause .075
-    "vandonuts/guilt3_battle_0002.png"
-    pause .075
-    "vandonuts/guilt3_battle_0003.png"
-    pause .075
-    "vandonuts/guilt3_battle_0004.png"
-    pause .075
-    "vandonuts/guilt3_battle_0005.png"
-    pause .075
-    "vandonuts/guilt3_battle_0006.png"
-    pause .075
-    "vandonuts/guilt3_battle_0007.png"
-    pause .075
-    "vandonuts/guilt3_battle_0008.png"
-    pause .075
-    "vandonuts/guilt3_battle_0009.png"
-    pause .075
-    "vandonuts/guilt3_battle_0010.png"
-    pause .075
-    "vandonuts/guilt3_battle_0011.png"
-image guilt3 battle ani2:
-    "vandonuts/guilt3_battle_0012.png"
-    pause .075
-    "vandonuts/guilt3_battle_0013.png"
-    pause .075
-    "vandonuts/guilt3_battle_0014.png"
-    pause .075
-    "vandonuts/guilt3_battle_0015.png"
-    pause .075
-    "vandonuts/guilt3_battle_0016.png"
-    pause .075
-    "vandonuts/guilt3_battle_0017.png"
-    pause .075
-    "vandonuts/guilt3_battle_0018.png"
-    pause .075
-    "vandonuts/guilt3_battle_0019.png"
-    pause .075
-    "vandonuts/guilt3_battle_0020.png"
-    pause .075
-    "vandonuts/guilt3_battle_0021.png"
-image sketch 1:
-    "blueprint_sketch/a1.png"
-    pause .25
-    "blueprint_sketch/a2.png"
-    pause .25
-    repeat
-image sketch 2:
-    "blueprint_sketch/b1.png"
-    pause .25
-    "blueprint_sketch/b2.png"
-    pause .25
-    repeat
-image sketch 3:
-    "blueprint_sketch/c1.png"
-    pause .25
-    "blueprint_sketch/c2.png"
-    pause .25
-    repeat
-image sketch 4:
-    "blueprint_sketch/d1.png"
-    pause .25
-    "blueprint_sketch/d2.png"
-    pause .25
-    repeat
-image elevator_flicker:
-    "elevator_lights_button.png"
-    pause .25
-    "elevator_button.png"
-    pause .1
-    "elevator_lights_button.png"
-    pause .5
-    "elevator_button.png"
-    pause .1
-    "elevator_lights_button.png"
-    pause .1
-    "elevator_button.png"
-    pause .1
-    "elevator_lights_button.png"
-    pause .75
-    "elevator_button.png"
-    pause .1
-    repeat
-image computer_lights:
-    "comp_light/computer_color1.png"
-    pause .5
-    "comp_light/computer_color2.png"
-    pause .5
-    "comp_light/computer_color3.png"
-    pause .5
-    "comp_light/computer_color4.png"
-    pause .5
-    "comp_light/computer_color5.png"
-    pause .5
-    "comp_light/computer_color6.png"
-    pause .5
-    "comp_light/computer_color7.png"
-    pause .5
-    "comp_light/computer_color8.png"
-    pause .5
-    repeat
 
 image battle_trans:
     "transition/CDTransition_000001.png"
@@ -284,14 +148,6 @@ image battle_trans:
     pause .03
     "transition/CDTransition_000039.png" 
 
-image giygas = TranslateImage(WaveImage("guilt1_bg.png",amp=20, freq=50, speed=50, strip_height=5, double="interleaved"))
-image masked_bg = WaveImage(PaletteCycler("images/Guilt2BG/MMBG", ".png", ['#0D8382', '#0B5E5C', '#09494A', '#0B5150', '#0A302F', '#0A302F', '#0D8382', '#0B5E5C', '#09494A', '#0B5150', '#0A302F', '#0A302F']), freq=3, amp=3, strip_height=10, double=True)
-image dead_je = WaveImage("doomfes_je.png",amp=40, freq=50, speed=50, strip_height=10,)
-image final 1 = WaveImage("andonot0.png", amp=100, freq=10, damp=2, speed=50, strip_height=5, double=True)
-image final 2 = WaveImage("andonot02.png", amp=50, freq=10, damp=2, speed=50, strip_height=5, double=True)
-image final 3 = WaveImage("andonot.png", amp=20, freq=15, damp=2, speed=50, strip_height=5, double=True)
-image final 4 = WaveImage("andonot.png", amp=10, freq=20, damp=2, speed=50, strip_height=5, double=True)
-image final 5 = WaveImage("andonot2.png", amp=10, freq=20, damp=2, speed=50, strip_height=5, double=True)
 init python:
     renpy.music.register_channel("sound_2", "sfx", loop=False)
     renpy.music.register_channel("music_c", "music", loop=True)
@@ -304,7 +160,6 @@ image aura = '#9471E7'
 image voice = '#FF00E8'
 image white =  '#ffffff'
 image green = '#33F3A6'
-image thrust = 'water_in_da_elevator.png' # previously #33F3A6
 define slow_fade = Fade(1,1,1)
 define go_fade_1 = Fade(2,0,0)
 define go_fade_2 = Fade(0,0,1)
@@ -338,53 +193,6 @@ transform hp_trans:
     on hide:
         easeout .5
 
-# MADINSTANCE CODE SECTION HIIIIII
-# MR. DEE MUSIC CODE
-
-init python:
-    renpy.music.register_channel("music_b", "music", loop=True, stop_on_mute=True, tight=False, file_prefix='', file_suffix='', buffer_queue=True)
-
-    # feel free to tweak this function to fit your needs or add more arguments just make sure to not fw the channels
-    def play_multiple(song, song2, delay = 2):
-        renpy.music.play(song,"music",True,delay,True,0,None,False,1.0)
-        renpy.music.play(song2,"music_b",True,delay,True,delay,None,False,1.0)
-        renpy.music.set_volume(0, delay = 0, channel="music_b")
-
-    def stop_layers(delay = 2):
-        renpy.music.stop(channel="music", fadeout = delay)
-        renpy.music.stop(channel="music_b", fadeout = delay)
-        renpy.music.set_volume(1,0,channel="music")
-        renpy.music.set_volume(1,0,channel="music_b")
-
-    # fadeout is multiplied by 3 to reduce dead air as much as possible
-    def update_layers(dir, delay = 2):
-        if dir == "music_b":
-            renpy.music.set_volume(0, delay = (delay * 3), channel="music")
-            renpy.music.set_volume(1, delay = delay, channel="music_b")
-        elif dir == "music":
-            renpy.music.set_volume(1, delay = delay, channel="music")
-            renpy.music.set_volume(0, delay = (delay * 3), channel="music_b")
-
-# LIGHTNING BACKGROUND CODE
-init python:
-    # Define a preset array of images for the thunder layer
-    BACKGROUND_IMAGES = [
-        "lightning_frames/cogdis_voiceoffice_2.png",
-        "lightning_frames/cogdis_voiceoffice_3.png",
-        "lightning_frames/cogdis_voiceoffice_4.png"
-    ]
-
-    # Function to set a random timer between 1 and 5 seconds
-    def random_timer():
-        return renpy.random.randint(1, 5)
-
-    def initizalize_thunder():
-        renpy.add_layer("thunder_layer",above="master")
-        while True:
-            renpy.pause(random_timer())
-            
-
-
 transform jeleft:
     xpos 100
     ypos 100
@@ -406,6 +214,8 @@ transform cccfuckoffleft:
 transform battle:
     xalign .5
     yalign .05
+transform flip: # Used for flipping. Taken from: https://www.reddit.com/r/RenPy/comments/je2pzw/comment/g9fk1n3/
+    xzoom -1.0
     
     
 ################################################################
@@ -413,14 +223,16 @@ transform battle:
 ################################################################
 
 # IMAGES
-image voice_tower_explode = "images/bg/voice_tower_explode.png"
+image ccclab = "images/bg/CCCLab.png"
 
 image andonuts = "andonuts/andonuts.png" # changed from CogDis to be in an Andonuts folder, for convenience's sake
 image andonuts worried = "andonuts/andonuts_worried.png" # changed from CogDis to be in an Andonuts folder, for convenience's sake
 image andonuts happy = "andonuts/andonuts_happy.png" # changed from CogDis to be in an Andonuts folder, for convenience's sake
-image landonuts = "andonuts/andonuts_left.png" # idk if we can flip images through code, so i did it through separate flipped images
-image landonuts worried = "andonuts/andonuts_worried_left.png" # idk if we can flip images through code, so i did it through separate flipped images
-image landonuts happy = "andonuts/andonuts_happy_left.png" # idk if we can flip images through code, so i did it through separate flipped images
+
+image joke_explainer = "jkex7000/joke_explainer.png" # changed from CogDis to be in an Andonuts folder, for convenience's sake
+image joke_explainer happy = "jkex7000/je_happy_talk.png" # changed from CogDis to be in an Andonuts folder, for convenience's sake
+image joke_explainer confused = "jkex7000/je_confused.png" # changed from CogDis to be in an Andonuts folder, for convenience's sake
+image joke_explainer question = "jkex7000/je_confused_dontsweatit.png" # changed from CogDis to be in an Andonuts folder, for convenience's sake
 
 # MUSIC
 define audio.snowblind = "<loop 8.726>audio/bgm/snowblind.ogg"
