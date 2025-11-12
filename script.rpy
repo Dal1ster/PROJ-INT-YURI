@@ -11,16 +11,16 @@ label main_menu:
 label start:
     $ quick_menu = False
 
-    t "The following experience features yuri."
+    t "The following experience contains sappy saphic romance, aggressively amateur prose, and a concerning helping of brainrot."
     
     menu:
-        t "Do you consent to yuri?"
+        t "Do you consent to these terms?"
 
         "Yes": 
-            t "Please enjoy the yuri."
+            t "Please, strap in and enjoy the show :)"
     
         "No":
-            t "fuck u, saying u don't consent to yuri is not nice >:\["
+            t "Are you Homophobic? Elitist? Do you value your time??? Whichever combination of the previous, not nice >:\["
             $ renpy.quit() 
     
 label beginning:
@@ -140,4 +140,5 @@ label beginning:
     q "This fix is.. bad and ugly, but it gets around said hardcoding" (window_background=cr, who_xalign=1.0, who_xpos=1720) # use contents between the parenthesis for characters on the right
 
     # remove when editing script further, this ends the script early and returns it to the disclaimer
+
     return
